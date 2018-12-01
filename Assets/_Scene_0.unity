@@ -412,7 +412,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 28
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
@@ -683,7 +683,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1379229832}
+      - m_Target: {fileID: 1379229834}
         m_MethodName: SwitchView
         m_Mode: 5
         m_Arguments:
@@ -862,6 +862,7 @@ GameObject:
   - component: {fileID: 1379229832}
   - component: {fileID: 1379229831}
   - component: {fileID: 1379229833}
+  - component: {fileID: 1379229834}
   m_Layer: 0
   m_Name: _Main Camera
   m_TagString: MainCamera
@@ -1005,6 +1006,32 @@ MonoBehaviour:
   easing: 0.05
   minXY: {x: 0, y: 0}
   camZ: 0
+--- !u!114 &1379229834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1379229823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 280c2bb16308c5744b3aad1d8d21b336, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uitLevel: {fileID: 699543261}
+  uitShots: {fileID: 1665489584}
+  uitButton: {fileID: 802696816}
+  castlePos: {x: 50, y: -9.5, z: 0}
+  castles:
+  - {fileID: 1020157678420266, guid: 244eacd74659ad741ac458cb032562fe, type: 2}
+  - {fileID: 1020157678420266, guid: 37695ff9bef8bc442bc1c6274c45ee9a, type: 2}
+  - {fileID: 1020157678420266, guid: 528f6c3f66bfb9b4ab3ad29e0fbb38ff, type: 2}
+  - {fileID: 1020157678420266, guid: 7d2755e386f8e974e9fead33f26c79d9, type: 2}
+  level: 0
+  levelMax: 0
+  shotsTaken: 0
+  castle: {fileID: 0}
+  mode: 0
+  showing: Show Slingshot
 --- !u!1 &1665489582
 GameObject:
   m_ObjectHideFlags: 0
@@ -1061,10 +1088,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 28
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 2
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 2
     m_AlignByGeometry: 0
